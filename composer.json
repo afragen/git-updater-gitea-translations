@@ -1,0 +1,38 @@
+{
+  "name": "afragen/git-updater-gitea-translations",
+  "description": "Translation language packs for Git Updater - Gitea plugin",
+  "type": "library",
+  "keywords": [
+    "git-updater-gitea",
+    "language packs",
+    "translations"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andy Fragen",
+      "email": "andy@thefragens.com",
+      "homepage": "https://thefragens.com",
+      "role": "Developer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/afragen/git-updater-gitea-translations"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/afragen/git-updater-gitea-translations/issues",
+    "source": "https://github.com/afragen/git-updater-gitea-translations"
+  },
+  "prefer-stable": true,
+  "require": {
+    "afragen/language-pack-maker": "dev-master"
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "php ./vendor/autoload.php"
+    ]
+  }
+}
